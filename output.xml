@@ -1,282 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220825 18:21:25.567" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220825 18:41:59.208" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="C:\Users\Techi\PycharmProjects\TestAutomation\RobotFrameworkFiles\test.robot">
-<test id="s1-t1" name="Print google search result/links" line="14">
+<test id="s1-t1" name="Print google search result/links" line="17">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.google.com/</arg>
-<arg>chrome</arg>
+<arg>${URL}</arg>
+<arg>${driver}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220825 18:21:25.711" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<status status="PASS" starttime="20220825 18:21:25.711" endtime="20220825 18:21:28.587"/>
+<msg timestamp="20220825 18:41:59.348" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220825 18:41:59.348" endtime="20220825 18:42:02.525"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220825 18:21:28.588" endtime="20220825 18:21:28.708"/>
+<status status="PASS" starttime="20220825 18:42:02.526" endtime="20220825 18:42:02.649"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${googleText}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220825 18:21:28.708" endtime="20220825 18:21:28.727"/>
+<status status="PASS" starttime="20220825 18:42:02.650" endtime="20220825 18:42:02.671"/>
 </kw>
 <kw name="Enter text on google text field">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${googleText}</arg>
 <arg>robotframework</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:28.728" level="INFO">Typing text 'robotframework' into text field 'xpath=//input[@name='q']'.</msg>
-<status status="PASS" starttime="20220825 18:21:28.728" endtime="20220825 18:21:28.788"/>
+<msg timestamp="20220825 18:42:02.672" level="INFO">Typing text 'robotframework' into text field 'xpath=//input[@name='q']'.</msg>
+<status status="PASS" starttime="20220825 18:42:02.671" endtime="20220825 18:42:02.733"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:28.728" endtime="20220825 18:21:28.788"/>
+<status status="PASS" starttime="20220825 18:42:02.671" endtime="20220825 18:42:02.733"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${googleButton}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220825 18:21:28.789" endtime="20220825 18:21:29.029"/>
+<status status="PASS" starttime="20220825 18:42:02.733" endtime="20220825 18:42:02.967"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220825 18:21:29.115" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220825 18:21:29.030" endtime="20220825 18:21:29.115"/>
+<msg timestamp="20220825 18:42:03.065" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220825 18:42:02.967" endtime="20220825 18:42:03.065"/>
 </kw>
 <kw name="Click on google search button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${googleButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:29.115" level="INFO">Clicking element 'xpath=//input[@name='btnK']'.</msg>
-<status status="PASS" starttime="20220825 18:21:29.115" endtime="20220825 18:21:30.821"/>
+<msg timestamp="20220825 18:42:03.066" level="INFO">Clicking element 'xpath=//input[@name='btnK']'.</msg>
+<status status="PASS" starttime="20220825 18:42:03.066" endtime="20220825 18:42:05.363"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:29.115" endtime="20220825 18:21:30.821"/>
+<status status="PASS" starttime="20220825 18:42:03.066" endtime="20220825 18:42:05.363"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${robotLinks}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220825 18:21:30.822" endtime="20220825 18:21:30.835"/>
+<status status="PASS" starttime="20220825 18:42:05.364" endtime="20220825 18:42:05.376"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220825 18:21:30.945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220825 18:21:30.835" endtime="20220825 18:21:30.946"/>
+<msg timestamp="20220825 18:42:05.479" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220825 18:42:05.377" endtime="20220825 18:42:05.479"/>
 </kw>
 <kw name="Print the Elements in console and text file">
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>@{Links}</var>
 <arg>${robotLinks}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20220825 18:21:30.950" level="INFO">@{Links} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="71a5464f-2615-442f-be5e-5ccdd1777ae9")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
-<status status="PASS" starttime="20220825 18:21:30.946" endtime="20220825 18:21:30.950"/>
+<msg timestamp="20220825 18:42:05.485" level="INFO">@{Links} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="f160acb7-8f4b-4291-9783-80bbe56e3252")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20220825 18:42:05.481" endtime="20220825 18:42:05.485"/>
 </kw>
 <kw name="Create File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <doc>Creates a file with the given content and encoding.</doc>
-<msg timestamp="20220825 18:21:30.951" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:30.950" endtime="20220825 18:21:30.951"/>
+<msg timestamp="20220825 18:42:05.486" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.485" endtime="20220825 18:42:05.486"/>
 </kw>
 <for flavor="IN">
 <var>${elementLinks}</var>
 <value>@{Links}</value>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="71a5464f-2615-442f-be5e-5ccdd1777ae9")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="f160acb7-8f4b-4291-9783-80bbe56e3252")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:30.963" level="INFO">${resultText} = Robot Framework
+<msg timestamp="20220825 18:42:05.497" level="INFO">${resultText} = Robot Framework
 https://robotframework.org</msg>
-<status status="PASS" starttime="20220825 18:21:30.952" endtime="20220825 18:21:30.963"/>
+<status status="PASS" starttime="20220825 18:42:05.486" endtime="20220825 18:42:05.497"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:30.963" level="INFO">Robot Framework
-https://robotframework.org</msg>
-<status status="PASS" starttime="20220825 18:21:30.963" endtime="20220825 18:21:30.963"/>
+<msg timestamp="20220825 18:42:05.498" level="INFO">Robot Framework
+https://robotframework.org
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.498" endtime="20220825 18:42:05.498"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:30.963" endtime="20220825 18:21:30.963"/>
+<status status="PASS" starttime="20220825 18:42:05.498" endtime="20220825 18:42:05.498"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:30.964" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:30.963" endtime="20220825 18:21:30.964"/>
+<msg timestamp="20220825 18:42:05.499" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.498" endtime="20220825 18:42:05.499"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:30.951" endtime="20220825 18:21:30.964"/>
+<status status="PASS" starttime="20220825 18:42:05.486" endtime="20220825 18:42:05.499"/>
 </iter>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="68b5d085-437d-4f47-8447-b0f943e7730e")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="714d0012-2414-4fcd-b4c7-bf0dccb2c462")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:30.975" level="INFO">${resultText} = Robot Framework - GitHub
+<msg timestamp="20220825 18:42:05.510" level="INFO">${resultText} = Robot Framework - GitHub
 https://github.com › robotframework › robotframework</msg>
-<status status="PASS" starttime="20220825 18:21:30.965" endtime="20220825 18:21:30.975"/>
+<status status="PASS" starttime="20220825 18:42:05.499" endtime="20220825 18:42:05.510"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:30.975" level="INFO">Robot Framework - GitHub
-https://github.com › robotframework › robotframework</msg>
-<status status="PASS" starttime="20220825 18:21:30.975" endtime="20220825 18:21:30.975"/>
+<msg timestamp="20220825 18:42:05.511" level="INFO">Robot Framework - GitHub
+https://github.com › robotframework › robotframework
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.510" endtime="20220825 18:42:05.511"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:30.975" endtime="20220825 18:21:30.976"/>
+<status status="PASS" starttime="20220825 18:42:05.511" endtime="20220825 18:42:05.511"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:30.976" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:30.976" endtime="20220825 18:21:30.976"/>
+<msg timestamp="20220825 18:42:05.512" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.511" endtime="20220825 18:42:05.512"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:30.965" endtime="20220825 18:21:30.977"/>
+<status status="PASS" starttime="20220825 18:42:05.499" endtime="20220825 18:42:05.512"/>
 </iter>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="ec200569-58d4-4a2f-b224-72876004a83c")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="8f8960e5-3b3d-41e9-815b-03dbc75a11ac")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:30.987" level="INFO">${resultText} = Robot Framework Tutorial - Tutorialspoint
+<msg timestamp="20220825 18:42:05.523" level="INFO">${resultText} = Robot Framework Tutorial - Tutorialspoint
 https://www.tutorialspoint.com › robot_framework</msg>
-<status status="PASS" starttime="20220825 18:21:30.977" endtime="20220825 18:21:30.987"/>
+<status status="PASS" starttime="20220825 18:42:05.512" endtime="20220825 18:42:05.523"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:30.988" level="INFO">Robot Framework Tutorial - Tutorialspoint
-https://www.tutorialspoint.com › robot_framework</msg>
-<status status="PASS" starttime="20220825 18:21:30.987" endtime="20220825 18:21:30.988"/>
+<msg timestamp="20220825 18:42:05.523" level="INFO">Robot Framework Tutorial - Tutorialspoint
+https://www.tutorialspoint.com › robot_framework
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.523" endtime="20220825 18:42:05.523"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:30.988" endtime="20220825 18:21:30.988"/>
+<status status="PASS" starttime="20220825 18:42:05.523" endtime="20220825 18:42:05.524"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:30.989" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:30.988" endtime="20220825 18:21:30.989"/>
+<msg timestamp="20220825 18:42:05.525" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.524" endtime="20220825 18:42:05.525"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:30.977" endtime="20220825 18:21:30.989"/>
+<status status="PASS" starttime="20220825 18:42:05.512" endtime="20220825 18:42:05.525"/>
 </iter>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="b2dc33d6-a7f6-4eb8-ab2d-b8483006fdac")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="4dc86f30-29c4-44c8-a8c4-14141187d290")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:31.002" level="INFO">${resultText} = Basic concepts of Robot Framework - Robocorp
+<msg timestamp="20220825 18:42:05.536" level="INFO">${resultText} = Basic concepts of Robot Framework - Robocorp
 https://robocorp.com › docs › robot-framework › basics</msg>
-<status status="PASS" starttime="20220825 18:21:30.989" endtime="20220825 18:21:31.002"/>
+<status status="PASS" starttime="20220825 18:42:05.525" endtime="20220825 18:42:05.536"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:31.002" level="INFO">Basic concepts of Robot Framework - Robocorp
-https://robocorp.com › docs › robot-framework › basics</msg>
-<status status="PASS" starttime="20220825 18:21:31.002" endtime="20220825 18:21:31.002"/>
+<msg timestamp="20220825 18:42:05.537" level="INFO">Basic concepts of Robot Framework - Robocorp
+https://robocorp.com › docs › robot-framework › basics
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.536" endtime="20220825 18:42:05.537"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:31.002" endtime="20220825 18:21:31.003"/>
+<status status="PASS" starttime="20220825 18:42:05.537" endtime="20220825 18:42:05.537"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:31.004" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:31.003" endtime="20220825 18:21:31.004"/>
+<msg timestamp="20220825 18:42:05.538" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.537" endtime="20220825 18:42:05.538"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:30.989" endtime="20220825 18:21:31.004"/>
+<status status="PASS" starttime="20220825 18:42:05.525" endtime="20220825 18:42:05.538"/>
 </iter>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="cf696d0f-df4f-432e-9142-561874070fc2")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="fa87bca6-566a-4619-bd62-632d856a5967")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:31.016" level="INFO">${resultText} = Robot Framework overview - Robocorp
+<msg timestamp="20220825 18:42:05.550" level="INFO">${resultText} = Robot Framework overview - Robocorp
 https://robocorp.com › docs › languages-and-frameworks</msg>
-<status status="PASS" starttime="20220825 18:21:31.004" endtime="20220825 18:21:31.016"/>
+<status status="PASS" starttime="20220825 18:42:05.538" endtime="20220825 18:42:05.550"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:31.016" level="INFO">Robot Framework overview - Robocorp
-https://robocorp.com › docs › languages-and-frameworks</msg>
-<status status="PASS" starttime="20220825 18:21:31.016" endtime="20220825 18:21:31.016"/>
+<msg timestamp="20220825 18:42:05.550" level="INFO">Robot Framework overview - Robocorp
+https://robocorp.com › docs › languages-and-frameworks
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.550" endtime="20220825 18:42:05.550"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:31.016" endtime="20220825 18:21:31.016"/>
+<status status="PASS" starttime="20220825 18:42:05.550" endtime="20220825 18:42:05.550"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:31.017" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:31.016" endtime="20220825 18:21:31.017"/>
+<msg timestamp="20220825 18:42:05.551" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.550" endtime="20220825 18:42:05.551"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:31.004" endtime="20220825 18:21:31.017"/>
+<status status="PASS" starttime="20220825 18:42:05.538" endtime="20220825 18:42:05.551"/>
 </iter>
 <iter>
-<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f482d5a596ee7d2a2e4cb013959b158f", element="f974542d-079e-4f76-9f89-64dfea41f5f5")&gt;</var>
+<var name="${elementLinks}">&lt;selenium.webdriver.remote.webelement.WebElement (session="cbdc9d31b46f985dddd74eb531f9255b", element="c7e8b27b-97f1-4398-a538-841eaccf8c77")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${elementLinks}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220825 18:21:31.028" level="INFO">${resultText} = Robot Framework in Python - GeeksforGeeks
+<msg timestamp="20220825 18:42:05.563" level="INFO">${resultText} = Robot Framework in Python - GeeksforGeeks
 https://www.geeksforgeeks.org › robot-framework-in-p...</msg>
-<status status="PASS" starttime="20220825 18:21:31.018" endtime="20220825 18:21:31.028"/>
+<status status="PASS" starttime="20220825 18:42:05.552" endtime="20220825 18:42:05.563"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220825 18:21:31.029" level="INFO">Robot Framework in Python - GeeksforGeeks
-https://www.geeksforgeeks.org › robot-framework-in-p...</msg>
-<status status="PASS" starttime="20220825 18:21:31.028" endtime="20220825 18:21:31.029"/>
+<msg timestamp="20220825 18:42:05.563" level="INFO">Robot Framework in Python - GeeksforGeeks
+https://www.geeksforgeeks.org › robot-framework-in-p...
+</msg>
+<status status="PASS" starttime="20220825 18:42:05.563" endtime="20220825 18:42:05.563"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${resultText}</arg>
+<arg>${resultText}${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220825 18:21:31.029" endtime="20220825 18:21:31.029"/>
+<status status="PASS" starttime="20220825 18:42:05.563" endtime="20220825 18:42:05.564"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${filePath}</arg>
 <arg>${resultText}${\n}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220825 18:21:31.030" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220825 18:21:31.029" endtime="20220825 18:21:31.030"/>
+<msg timestamp="20220825 18:42:05.565" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt"&gt;C:\Users\Techi\PycharmProjects\TestAutomation\Resources\output.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220825 18:42:05.564" endtime="20220825 18:42:05.565"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:31.017" endtime="20220825 18:21:31.030"/>
+<status status="PASS" starttime="20220825 18:42:05.552" endtime="20220825 18:42:05.565"/>
 </iter>
-<status status="PASS" starttime="20220825 18:21:30.951" endtime="20220825 18:21:31.030"/>
+<status status="PASS" starttime="20220825 18:42:05.486" endtime="20220825 18:42:05.565"/>
 </for>
-<status status="PASS" starttime="20220825 18:21:30.946" endtime="20220825 18:21:31.030"/>
+<status status="PASS" starttime="20220825 18:42:05.480" endtime="20220825 18:42:05.565"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220825 18:21:31.030" endtime="20220825 18:21:33.133"/>
+<status status="PASS" starttime="20220825 18:42:05.566" endtime="20220825 18:42:07.671"/>
 </kw>
-<status status="PASS" starttime="20220825 18:21:25.710" endtime="20220825 18:21:33.134"/>
+<status status="PASS" starttime="20220825 18:41:59.347" endtime="20220825 18:42:07.672"/>
 </test>
-<status status="PASS" starttime="20220825 18:21:25.568" endtime="20220825 18:21:33.135"/>
+<status status="PASS" starttime="20220825 18:41:59.209" endtime="20220825 18:42:07.675"/>
 </suite>
 <statistics>
 <total>

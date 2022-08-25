@@ -40,7 +40,7 @@ Print the Elements in console and text file
     create file    ${filePath}
     FOR   ${elementLinks}  IN   @{Links}
         ${resultText}=    get text    ${elementLinks}
-        Log  ${resultText}
-        log to console  ${resultText}
+        Log  ${resultText}${\n}
+        log to console  ${resultText}${\n}
         append to file  ${filePath}    ${resultText}${\n}    encoding=UTF-8
     END
