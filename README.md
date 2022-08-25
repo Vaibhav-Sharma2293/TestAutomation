@@ -38,8 +38,7 @@ Assignment details
 
          Create project in any IDE(I have choosen PyCharm) and add Robot framework support from plugins.
          File and folders added to repository in below structure:
-
-          ![image](https://user-images.githubusercontent.com/91410549/186680731-79136922-176d-4340-91b7-e213a1b6f201.png)
+ ![image](https://user-images.githubusercontent.com/91410549/186680731-79136922-176d-4340-91b7-e213a1b6f201.png)
 
       5. Scripting and Execution
 
